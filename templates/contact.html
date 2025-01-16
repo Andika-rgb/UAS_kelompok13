@@ -28,7 +28,7 @@
                         <a class="nav-link" href="../index.html">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="../destinations.html">Destinations</a>
+                        <a class="nav-link" href="destinations.html">Destinations</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link active" href="contact.html">Contact Us</a>
@@ -134,17 +134,17 @@
     <script>
         document.getElementById('contactForm').addEventListener('submit', function(e) {
             e.preventDefault();
-    
+
             console.log('Form submitted');
-    
+
             const formData = new FormData(this);
-    
+
             const data = {};
             formData.forEach((value, key) => {
                 data[key] = value;
             });
-    
-            fetch('https://uas-kelompok13.vercel.app/templates/contact.html', { // Menggunakan URL domain resmi
+
+            fetch('https://uas-kelompok13.vercel.app/templates/contact.html', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
@@ -171,6 +171,6 @@
                 alert('An error occurred while sending the message: ' + error.message);
             });
         });
-    </script>    
+    </script>
 </body>
 </html>
