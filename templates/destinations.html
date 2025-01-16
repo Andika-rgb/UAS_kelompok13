@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destinations - AndikaTravel</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .destination-card {
+            transition: transform 0.3s;
+            cursor: pointer;
+        }
+        .destination-card:hover {
+            transform: translateY(-10px);
+        }
+        .card-img-top {
+            height: 200px;
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">AndikaTravel</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="destinations.html">Destinations</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <div class="bg-primary text-white py-5 mt-5">
+        <div class="container">
+            <h1 class="display-4">Our Destinations</h1>
+            <p class="lead">Explore our carefully curated selection of amazing places</p>
+        </div>
+    </div>
+
+    <!-- Destinations Grid -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row g-4">
+                <!-- Destination 1 -->
+                <div class="col-md-4">
+                    <div class="card destination-card h-100">
+                        <img src="bali.jpg" class="card-img-top" alt="Bali">
+                        <div class="card-body">
+                            <h5 class="card-title">Bali, Indonesia</h5>
+                            <p class="card-text">Experience the magic of tropical paradise with pristine beaches and rich culture.</p>
+                            <a href="contact.html" class="btn btn-primary">Booking now</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Destination 2 -->
+                <div class="col-md-4">
+                    <div class="card destination-card h-100">
+                        <img src="yogyakarta.jpg" class="card-img-top" alt="yogyakarta">
+                        <div class="card-body">
+                            <h5 class="card-title">yogyakarta, Indonesia</h5>
+                            <p class="card-text">Feel the coolness in the city of Yogyakarta.</p><br>
+                            <a href="contact.html" class="btn btn-primary">Booking now</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Destination 3 -->
+                <div class="col-md-4">
+                    <div class="card destination-card h-100">
+                        <img src="jakarta.jpg" class="card-img-top" alt="jakarta">
+                        <div class="card-body">
+                            <h5 class="card-title">jakarta, Indonesia</h5>
+                            <p class="card-text">
+                                discover the beauty of the city of Jakarta.</p> <br><br>
+                            <a href="contact.html" class="btn btn-primary">Booking now</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Additional Destinations -->
+                <div class="col-md-4">
+                    <div class="card destination-card h-100">
+                        <img src="Bandung.jpeg" class="card-img-top" alt="Bandung">
+                        <div class="card-body">
+                            <h5 class="card-title">Bandung, Indonesia</h5>
+                            <p class="card-text">Enjoy 1000 pleasures in the city of Bandung.</p> <br>
+                            <a href="contact.html" class="btn btn-primary">Booking now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card destination-card h-100">
+                        <img src="Medan.jpg" class="card-img-top" alt="Medan">
+                        <div class="card-body">
+                            <h5 class="card-title">Medan, Indonesia</h5>
+                            <p class="card-text">Discover the perfect blend of urban life and natural beauty.</p>
+                            <a href="contact.html" class="btn btn-primary">Booking Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card destination-card h-100">
+                        <img src="Solo1.jpeg" class="card-img-top" alt="Solo">
+                        <div class="card-body">
+                            <h5 class="card-title">Solo, Indonesia</h5>
+                            <p class="card-text">
+                                enjoy the beauty and friendliness of the city of Solo.</p>
+                            <a href="contact.html" class="btn btn-primary">Booking Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h5>AndikaTravel</h5>
+                    <p>Your trusted travel companion</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <h5>Contact Us</h5>
+                    <p>Email: dika.hendrawan23@gmail.com<br>Phone: +62 895 337 030 506</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
