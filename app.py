@@ -1,5 +1,4 @@
 from flask import Flask, render_template, request, jsonify
-from flask_cors import CORS
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
 from models import Message
@@ -7,7 +6,6 @@ from config import Config
 
 app = Flask(__name__)
 app.config.from_object(Config)
-CORS(app)  # Tambahkan konfigurasi CORS
 engine = create_engine(Config.SQLALCHEMY_DATABASE_URI)
 Session = sessionmaker(bind=engine)
 
